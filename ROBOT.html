@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<style>
+
+/* we comment this out to animate the ROBOT!
+div { 
+    margin: 0 auto; /* we used margin-0-auto to build the robot parts. Learning borders,radial gradients, and CSS positioning at once is overwhelming! */
+    /* height: 150px; */
+    /* width: 300px; */
+/* } */
+
+.beep {
+    width: 5px;
+    height: 0;
+    border: 5px solid transparent;  /* adding a transparent left and right border will give this antenna a trapezoid shape */
+    border-top: 10px solid #8bb;
+    border-bottom: 80px solid #8bb;  
+}
+
+.brain {
+    background: -webkit-radial-gradient(circle, red 15%, transparent 40%), #aca;
+    background: -moz-radial-gradient(circle, red 15%, transparent 40%), #aca;
+    background: radial-gradient(circle, red 15%, transparent 40%), #aca;
+    background-size: 75px 150px;
+    height: 150px;
+    width: 150px;
+    border-bottom: 40px solid #8bb;
+    border-radius: 60px 60px 10px 10px;
+}
+
+.torso {
+    height: 0;
+    width: 140px;
+    border-top: 300px solid #aca;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-radius: 20px 20px 100px 100px;
+}
+
+.foot {
+    border: 15px solid #8bb;
+    border-radius: 40px;
+    background: #aca;
+    height: 40px;
+    width: 40px;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="beep"></div>
+    <div class="brain"></div>
+    <div class="torso"></div>
+    <div class="foot"></div>
+</body>
+</html>
